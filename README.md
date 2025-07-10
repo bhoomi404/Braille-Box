@@ -1,21 +1,55 @@
-# Braille-Box
-🛠️ Work in progress - Building a dual-mode Braille input/output device for visually impaired users.
+# Braille-Box 🔠🔊  
+🛠️ Work in progress — Building a dual-mode Braille input/output device for visually impaired users.
+
 ## 🔍 Project Overview
 
-The **Braille Box** is an ongoing hardware-software project aimed at empowering visually impaired users with a low-cost, portable assistive device. Built using a Raspberry Pi and basic electronic components, the system enables **dual-mode Braille interaction**:
+The **Braille Box** is a hardware-software assistive device designed to help visually impaired individuals both write and read Braille using tactile buttons and solenoids, enhanced with audio feedback via text-to-speech.
 
-- 📝 **Writing Mode** – Users can type Braille using 6 tactile input buttons. Each Braille character is recognized, spoken out loud via text-to-speech, and optionally saved to a file.
-- 📖 **Reading Mode** – The device physically raises Braille dots using solenoids or actuators to display saved content, allowing the user to read it through touch.
+Built using a **Raspberry Pi**, tactile switches, and actuators, the system allows:
+- 📝 **Writing Mode** – Users press 6 tactile buttons to form Braille characters. Detected characters are spoken aloud using `espeak` and optionally saved for later reading.
+- 📖 **Reading Mode** – Stored text is converted into Braille and physically raised using solenoids, allowing users to read it through touch.
 
-The device also includes features like:
-- A **toggle switch** to change between modes.
-- **Audio output (TTS)** for spoken feedback using `espeak`.
-- Option for **silent/exam mode** with all audio disabled.
-- Plans for **USB export** and **offline usage**, making it usable in examination scenarios.
+## 🔧 Features
+- Dual-mode operation (read/write) controlled by a **toggle switch**
+- **6-button Braille keypad** for character input
+- **Solenoid-driven Braille cell** for tactile output
+- **Text-to-speech** output using `espeak`
+- **Offline support** for secure, exam-compatible use
+- **Audio toggle** for silent mode
 
-This project is currently in its **prototyping phase**, and documentation, circuit diagrams, and code will be added as the system evolves.
+## 🗂️ Project Structure (Planned)
+Braille-Box/
+├── hardware/
+│ └── Circuit Diagram.png
+├── software/
+│ └── main.py (coming soon)
+├── docs/
+│ └── block_diagram.png (coming soon)
+├── README.md
+└── LICENSE
 
-## 🧠 Vision
 
-> “Making accessible technology simple, scalable, and affordable — one tactile dot at a time.”
+## 🚀 Project Progress
 
+- ✅ Circuit diagram completed (Fritzing)
+- ⬜ GPIO mapping and testing of Braille input
+- ⬜ Code to convert button presses into characters
+- ⬜ Integration of solenoids for Braille output
+- ⬜ Text-to-speech setup and audio feedback
+- ⬜ USB export/silent mode logic (planned)
+
+## 📷 Preview
+
+![Circuit Diagram](hardware/Circuit%20Diagram.png)
+
+## 🎯 Vision
+
+> "Making accessible technology simple, scalable, and affordable — one tactile dot at a time."
+
+## 👥 Contributions
+
+Suggestions, ideas, and forks are welcome. Let’s collaborate to make assistive tech more inclusive.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
